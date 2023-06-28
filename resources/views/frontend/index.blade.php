@@ -136,12 +136,12 @@
 
                                     <!-- Wishlist -->
                                     <div class="product_wishlist">
-                                        <a href="wishlist.html"><i class="icofont-heart"></i></a>
+                                        <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
                                     </div>
 
                                     <!-- Compare -->
                                     <div class="product_compare">
-                                        <a href="compare.html"><i class="icofont-exchange"></i></a>
+                                        <a href="compare.html"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                     </div>
                                 </div>
 
@@ -149,13 +149,12 @@
                                 <div class="product_description" >
                                     <!-- Add to cart -->
                                     <div class="product_add_to_cart">
-                                        <a href="#"><i class="icofont-shopping-cart"></i> Add to Cart</a>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
                                     </div>
 
                                     <!-- Quick View -->
                                     <div class="product_quick_view">
-                                        <a href="#" data-toggle="modal" data-target="#quickview"><i
-                                                class="icofont-eye-alt"></i> Quick View</a>
+                                        <a href="#" data-toggle="modal" data-target="#quickview"><i class="fa-solid fa-eye"></i>  Quick View</a>
                                     </div>
 
                                     <a href="{{ route('product.detail', $f_product->slug) }}">{{ ucfirst($f_product->title) }}</a>

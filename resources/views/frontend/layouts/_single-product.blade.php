@@ -18,11 +18,11 @@
             <!-- Wishlist -->
             <div class="product_wishlist">
                 <a href="javascript:void(0);" id="add_to_wishlist{{ $product->id }}" class="add_to_wishlist"
-                    data-quantity="1" data-id="{{ $product->id }}"><i class="icofont-heart"></i></a>
+                    data-quantity="1" data-id="{{ $product->id }}"><i class="fa-solid fa-heart"></i></a>
             </div>
             <!-- Compare -->
             <div class="product_compare">
-                <a href="compare.html"><i class="icofont-exchange"></i></a>
+                <a href="compare.html"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
             </div>
         </div>
         <!-- Product Description -->
@@ -30,13 +30,12 @@
             <!-- Add to cart -->
             <div class="product_add_to_cart">
                 <a href="javascipt:void(0);" data-price="{{ $product->offer_price }}" class="add_to_cart"
-                    data-quantity="1" id="add_to_cart{{ $product->id }}" data-product_id="{{ $product->id }}"><i
-                        class="icofont-shopping-cart"></i> Add to Cart</a>
+                    data-quantity="1" id="add_to_cart{{ $product->id }}" data-product_id="{{ $product->id }}">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
             </div>
             <!-- Quick View -->
             <div class="product_quick_view">
-                <a href="#" data-toggle="modal" data-target="#quickview{{ $product->id }}"><i
-                        class="icofont-eye-alt"></i> Quick View</a>
+                <a href="#" data-toggle="modal" data-target="#quickview{{ $product->id }}"><i class="fa-solid fa-eye"></i>  Quick View</a>
             </div>
             <p class="brand_name">
                 {{ \App\Models\Brand::where('id', $product->brand_id)->value('title') }}</p>

@@ -45,7 +45,7 @@
                                     </div>
                                     <form class="user" method="POST" action="{{ route('login') }}">
                                         <div class="form-group">
-                                            <input type="email" @error('email') is-invalid @enderror" name="email"
+                                            <input type="email" @error('email') is-invalid @enderror name="email"
                                                 value="{{ old('email') }}" required autocomplete="email" autofocus
                                                 class="form-control form-control-user" id="exampleInputEmail"
                                                 aria-describedby="emailHelp" placeholder="Enter Email Address...">
